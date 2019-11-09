@@ -5,7 +5,7 @@ public class VendorSystem implements Vendor {
     @Override
     public void connectToDB(String connectionString, String customerId) {
         System.out.println("Using connstring connect to database and fetch age of customer and set age");
-        age = 40;
+        age = 50;
     }
 
     @Override
