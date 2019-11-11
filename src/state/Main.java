@@ -5,7 +5,7 @@ public class Main {
         StateContext obj = new StateContext();
         obj.isMeetingOn("12");
 
-        obj.setMeetingState(new StateLive());
+        obj.setState(new StateLive());
         obj.isMeetingOn("12");
     }
 }
