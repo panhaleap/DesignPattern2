@@ -1,4 +1,4 @@
-package flyweight;
+package flyweight_from_tutorial;
 
 import java.util.ArrayList;
 import java.util.List;
