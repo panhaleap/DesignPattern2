@@ -1,7 +1,8 @@
-package repository_practice;
+package repository_from_tutorial;
 
 public class ContactUI {
-    //List<Contact> repository;
+	
+	//List<Contact> repository;
     Repository<Contact> repository;
 
     public ContactUI(Repository<Contact> repository)
@@ -19,8 +20,12 @@ public class ContactUI {
         repository.remove(obj);
     }
 
-    public void displayAllContacts()
+    public void printAllContacts()
     {
+/*        for (Contact item : repository)
+        {
+            System.out.println(item);
+        }*/
         System.out.println(repository.getAll());
 
     }
