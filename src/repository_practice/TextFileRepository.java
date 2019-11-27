@@ -11,7 +11,7 @@ public class TextFileRepository implements Repository<Contact>{
         FileWriter writer;
         try {
             writer = new FileWriter(path, true);
-            writer.write(obj.toString());
+            writer.write(" " + obj.toString());
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();

@@ -7,13 +7,14 @@ public class Contact {
     public String toString() {
         String temp = "";
 
+        //System.getProperty( "line.separator" ) For starting a new line with FileWriter
         if(this instanceof Friend)
         {
-            temp = "Friend name: "+ name +", Phone: "+ ((Friend)this).phoneNumber;
+            temp = System.getProperty( "line.separator" ) + "Friend name: "+ name +", Phone: "+ ((Friend)this).phoneNumber;
         }
         else if(this instanceof Work)
         {
-            temp = "Work name: "+ name +", Email: "+ ((Work)this).email;
+            temp = System.getProperty( "line.separator" ) + "Work name: "+ name +", Email: "+ ((Work)this).email;
 
         }
         return temp;
